@@ -1,0 +1,104 @@
+Thomas P, Theocharous G, Ghavamzadeh M. High Confidence Policy Improvement[J]. 2015:2380-2388.
+Theocharous G, Thomas P S, Ghavamzadeh M. Personalized ad recommendation systems for life-time value optimization with guarantees[C]// International Conference on Artificial Intelligence. AAAI Press, 2015:1806-1812.
+
+
+Personalizing  web  services  such  as  the  delivery  of  news  articles  or  advertisements
+is an effective way to increase users’ satisfaction with a website or to increase the
+yield of a marketing campaign.  
+
+
+A policy can recommend content considered to be the
+best for each particular user based on a profile of that user’s interests and preferences
+inferred from their history of online activity. 
+
+
+A  reinforcement  learning
+system can improve a recommendation policy by making adjustments in response to
+user feedback.  One way to obtain user feedback is by means of website satisfaction
+surveys, but for acquiring feedback in real time it is common to monitor user clicks
+as indicators of interest in a link.
+
+
+ method long used in marketing called
+A/B testing
+is a simple type of reinforce-
+ment learning used to decide which of two versions, A or B, of a website users prefer.
+
+Adding  context  consisting  of  features  describing
+individual users and the content to be delivered allows personalizing service.  
+
+Policies derived from the contextual bandit formulation
+are greedy in the sense that they do not take long-term effects of actions into account.
+
+
+
+
+Theocharous,  Thomas,  and  Ghavamzadeh  (2015)  argued  that  better  results  are
+possible by formulating personalized recommendation as a Markov decision problem
+(MDP) with the objective of maximizing the total number of clicks users make over
+repeated visits to a website.  
+
+As an example of how a marketing strategy might take advantage of long-term user
+interaction, Theocharous et al. contrasted a greedy policy with a longer-term policy
+for displaying ads for buying a product, say a car.  The ad displayed by the greedy
+policy might offer a discount if the user buys the car immediately.  A user either takes
+the offer or leaves the website, and if they ever return to the site, they would likely
+see the same offer.
+
+
+ A longer-term policy:
+. It might start by describing the
+availability of favorable financing terms, then praise an excellent service department,
+and then, on the next visit, offer the final discount.This type of policy can result
+in more clicks by a user over repeated visits to the site, and if the policy is suitably
+designed, more eventual sales.
+
+
+The other algorithm, a reinforcement learning algo-
+rithm based on an MDP formulation, aimed at improving the number of clicks users
+made over multiple visits to a website.They called this latter algorithm
+life-time value(LTV) optimization.  B
+
+
+Data sets from the banking industry were used for training and testing these algo-
+rithms. The data sets consisted of many complete trajectories of customer interaction
+with a bank’s website that showed each customer one out of a collection of possible
+offers.  If a customer clicked, the reward was 1, and otherwise it was 0.  One data set
+contained  approximately  200,000  interactions  from  a  month  of  a  bank’s  campaign
+that randomly offered one of 7 offers.  
+ntained 4,000,000 interactions involving 12 possible offers
+
+
+
+ All interactions
+included  customer  features  such  as  the  time  since  the  customer’s  last  visit  to  the
+website,  the number of their visits so far,  the last time the customer clicked,  geo-
+graphic  location,  one  of  a  collection  of  interests,  and  features  giving  demographic
+information.
+
+Greedy optimization was based on a mapping estimating the probability of a click
+as  a  function  of  user  features.   The  mapping  was  learned  via  supervised  learning
+from one of the data sets by means of a random forest (RF) algorithm (Breiman,
+
+
+
+E-greedy policy that selected with probability 1-
+
+the offer predicted by the RF
+to have the highest probability of producing a click, and otherwise selected from the
+other offers uniformly at random.
+
+
+LTV optimization used a batch-mode reinforcement learning algorithm called
+fitted
+Q iteration
+(FQI). : Q-learning. 
+
+
+final policy for testing the LTV approach was the
+
+-greedy policy based on the best
+policy  produced  by  FQI  with  the  initial  action-value  function  set  to  the  mapping
+produced by the RF for the greedy optimization approach
+
+
