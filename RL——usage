@@ -1,0 +1,53 @@
+https://arxiv.org/pdf/1701.07274.pdf
+
+Robotics
+btained the navigation ability by so
+lving an RL problem maximizing cu-
+mulative reward and jointly considering un/self-supervis
+ed tasks to improve data efficiency and task
+performance.   T
+
+The auth
+ors incorporated a stacked LSTM to use
+memory at different time scales for dynamic elements in the e
+nvironments
+
+
+Spoken dialogue system
+Deep reinforcement learning for dialogue generation
+
+Machine translation
+The dual learning mechanism mayhave  extensions to  many tasks,  if  the  task  has  a  dual form,  e.g
+.,  speech  recognition and  text to
+speech, image caption and image generation, question answe
+ring and question generation, search
+and keyword extraction, etc.
+
+
+Text sequence prediction
+
+ext generation models are usually based on n-gram, feed-fo
+rward neural networks, or recurrent
+neural networks, trained to predict next word given the prev
+ious ground truth words as inputs; then
+in testing, the trained models are used to generate a sequenc
+e word by word, using the generated
+words as inputs. The errors will accumulate on the way, causi
+ng the exposure bias issue. Moreover,
+these models are trained with word level losses, e.g., cross
+entropy, to maximize the probability of
+next word; however, the models are evaluated on a different m
+etrics like BLEU
+
+
+
+Neural architecture design
+personalized web services
+
+MUSIC GENERATION
+A Note-RNN was trained to predict the
+next note in a musical sequence with a large corpus of songs. T
+hen the Note-RNN was refined using
+RL to obtain RL Tuner, with a reward function considering bot
+h rules of music theory and output of
+another trained Note-RNN. 
