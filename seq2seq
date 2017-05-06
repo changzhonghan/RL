@@ -5,3 +5,39 @@ http://web.stanford.edu/class/cs224n/lectures/cs224n-2017-lecture14-highlight.pd
 
  Playing Atari with Deep Reinforcement Learning 
  https://arxiv.org/pdf/1312.5602.pdf
+ 
+http://www.cs.toronto.edu/~fidler/teaching/2015/slides/CSC2523/jonathan_rl.pdf
+
+AI game:
+DQN imporve
+DQN A3C...
+more game:GTA5
+
+robotics:
+SLAM
+raw image
+simulator or realiric
+
+alpha go :
+dimention
+action
+np-hard
+long-term return
+reward decay
+
+spoken dialogue:
+MLE SL--RL
+GAN
+knowledge source based 
+end to end
+
+MACHINE TRANSLATION:
+sequence to sequence
+dual learning
+speech  recognition   
+text to speech
+image generation
+
+
+
+
