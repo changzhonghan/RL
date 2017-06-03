@@ -9,3 +9,7 @@ https://github.com/ShangtongZhang/reinforcement-learning-an-introduction
 
 Paper
 https://github.com/junhyukoh/deep-reinforcement-learning-papers
+
+
+
+http://www.cs.utoronto.ca/~fidler/teaching/2015/slides/CSC2523/jonathan_rl.pdf
